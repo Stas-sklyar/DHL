@@ -19,13 +19,6 @@ document.querySelector('body').classList.add('no-webp');
 });
 
 
-// show subMenu
-function showSubMenu() {
-	let subMenuList = document.getElementById("subMenuList");
-	subMenuList.classList.toggle("showMenu");
-}
-
-
 // adaptive menu
 let burger = document.getElementById("adaptive-menu__burger");
 

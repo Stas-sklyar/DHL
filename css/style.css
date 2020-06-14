@@ -336,7 +336,7 @@ table {
   height: 120px;
 }
 
-.adaptive-menu #adaptive-menu__burger span {
+.adaptive-menu__line {
   display: block;
   width: 35px;
   height: 4px;
@@ -344,7 +344,7 @@ table {
   background-color: #000;
 }
 
-.adaptive-menu #adaptive-menu__burger span:nth-of-type(2) {
+.adaptive-menu__line:nth-of-type(2) {
   margin: 7px 0;
 }
 
@@ -849,7 +849,7 @@ table {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 5;
-  margin: -193.333px 15px 100px 15px;
+  margin: -193.33px 15px 100px 15px;
   padding: 0 -15px;
 }
 
@@ -1363,6 +1363,7 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: -200px 15px 100px 15px;
   }
 
   .about-company__column {
