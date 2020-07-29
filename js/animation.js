@@ -14,7 +14,16 @@ var wow = new WOW(
         scrollContainer: null // селектор прокручивающегося контейнера (опционально, по умолчанию, window)
     }
 );
-wow.init();
+
+document.addEventListener("DOMContentLoaded", function() {
+  if(window.innerWidth > 450) {
+      alert('Больше');
+      wow.init();
+  }
+    else {
+        alert('Меньше');
+    }
+});
 
 
 let wowElement = document.getElementsByClassName("wow");
