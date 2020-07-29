@@ -1074,13 +1074,8 @@ table {
   background-color: #ffcc00;
 }
 
-.excellence {
-  background-color: #ba0000;
-  padding: 90px 15px;
-}
-
 .excellence__title {
-  color: #ffffff;
+  color: #ba0000;
   font-family: Poppins-Bold;
   font-size: 30px;
   line-height: 35px;
@@ -1108,7 +1103,7 @@ table {
 }
 
 .excellence__paragraph {
-  color: #ffffff;
+  color: #ba0000;
   font-family: Poppins;
   font-size: 16px;
   line-height: 24px;
@@ -1170,6 +1165,10 @@ table {
   background-color: #f9f9f9;
   margin-right: 20px;
   border: 2px solid rgba(186, 0, 0, 0.1);
+}
+
+.clients__logo-box:hover {
+  transform: scale(1.1,1.1);
 }
 
 .clients__logo-box:last-child {
@@ -1713,3 +1712,90 @@ table {
 .webp .client-logo-3{ background: #f9f9f9 url(../img/clients/clients03.webp) center center no-repeat; }
 
 .webp .client-logo-4{ background: #f9f9f9 url(../img/clients/clients04.webp) center center no-repeat; }
+
+
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.wow {
+  visibility:hidden;
+}
+
+.excellence {
+  background-color: #ba0000;
+  padding: 90px 15px;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-color: #ba0000;
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
