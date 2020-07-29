@@ -15,19 +15,24 @@ var wow = new WOW(
     }
 );
 
+let wowElement = document.getElementsByClassName("wow");
+
+
 document.addEventListener("DOMContentLoaded", function() {
   if(window.innerWidth > 450) {
       alert('Больше');
       wow.init();
+      for (let elem in wowElement) {
+            wowElement[elem].classList.add("animate__animated", "animate__fadeInUp");
+        }
   }
     else {
         alert('Меньше');
+        for (let elem in wowElement) {
+            wowElement[elem].classList.remove("wow");
+        }
     }
 });
 
 
-let wowElement = document.getElementsByClassName("wow");
 
-for (let elem in wowElement) {
-    wowElement[elem].classList.add("animate__animated", "animate__fadeInUp");
-}
