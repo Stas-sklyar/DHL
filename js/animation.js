@@ -27,10 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
   }
     else {
-        alert('Меньше');
-        for (let elem in wowElement) {
-            wowElement[elem].classList.remove("wow");
-        }
+        alert('Мень2222ше');
+        wow.init();
     }
 });
 
