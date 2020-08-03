@@ -20,14 +20,12 @@ let wowElement = document.getElementsByClassName("wow");
 
 document.addEventListener("DOMContentLoaded", function() {
   if(window.innerWidth > 450) {
-      alert('Больше');
       wow.init();
       for (let elem in wowElement) {
             wowElement[elem].classList.add("animate__animated", "animate__fadeInUp");
         }
   }
     else {
-        alert('Мень2222ше');
         wow.init();
     }
 });
